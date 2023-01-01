@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: Nunito Sans;
+}
+
+body {
+  background-image: url('/images/bg.jpg');
+  background-position: center; 
+  background-size: auto; 
+}
+
+.currency-expo {
+  width: 80%;
+  height: 200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rgb(0, 0, 0, 0.1); */
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 1px rgba(102, 101, 101, 0.5)
+}
+
+.currency-expo-box {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: solid 1px rgba(102, 101, 101, 0.9);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.currency-expo-box:hover {
+  box-shadow: 0 0 0.5rem black;
+}
+
+.currency-expo-box-half {
+  width: 100%; 
+  height: 50%; 
+  text-align: center;
+  padding: 10% 0;
+  font-size: 25px;
+  color:rgb(189, 186, 186)
+}
+
+.equals {
+  position: absolute;
+  color:rgb(189, 186, 186);
+  left: 50%;
+  top: 43%;
+  transform: scale(2);
+}
+
+.convert-box {
+  position: relative;
+  width: 50%;
+  height: 180px;
+  margin: 100px auto;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: solid 1px rgba(102, 101, 101, 0.9);
+  color:rgb(189, 186, 186);
+  transition: box-shadow 0.3s;
+}
+
+.convert-box:hover {
+  box-shadow: 0 0 0.5rem black;
+}
+
+.select-currency-segment {
+  position: absolute;
+  width: 55%;
+  top: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-segment {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px auto;
+  height: 50px;
+  width: 80%;
+}
+
+.amount-input {
+  border: none;
+  height: 100%;
+  width: 45%;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color:rgb(189, 186, 186);
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.equals2 {
+  padding: 13px 0;
+   transform: scale(2); 
+}
+
+#convert-button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: solid 1px rgba(221, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0, 0.6);
+  transition: background-color 0.3s
+}
+
+#convert-button:hover {
+  background-color: rgba(221, 0, 0, 0.9);
+}
+
+.select-list {
+  height: 30px;
+  width: 30%;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: rgb(189, 186, 186);
+  padding: 5px;
+  border: none;
+  appearance: none;
+  /* setting select tag's arrow picture */
+  background: url('/images/arrow-down-3101.svg') no-repeat right rgb(0, 0, 0, 0.6);  
+  /* setting arrow's size */
+  background-size: 16px 16px;  
+  /* disabling default arrow appearance */
+  --webkit-appearance: none;
+  /* moving the arrow picture 95% on X axis */
+  background-position-x: 95%;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(56, 56, 56); 
+}

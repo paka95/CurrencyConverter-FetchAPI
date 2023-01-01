@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="currency-expo">
+      <div class="currency-expo-box">
+        <div class="currency-expo-box-half">
+          <div>1 USD</div>
+        </div>
+        <div class="equals">=</div>
+        <div class="currency-expo-box-half">
+          <div><span id="chf"></span><span> CHF</span></div>
+        </div>
+      </div>
+
+      <div class="currency-expo-box">
+        <div class="currency-expo-box-half">
+          <div>1 USD</div>
+        </div>
+        <div class="equals">=</div>
+        <div class="currency-expo-box-half">
+          <div><span id="eur"></span><span> EUR</span></div>
+        </div>
+      </div>
+
+      <div class="currency-expo-box">
+        <div class="currency-expo-box-half">
+          <div>1 USD</div>
+        </div>
+        <div class="equals">=</div>
+        <div class="currency-expo-box-half">
+          <div><span id="gbp"></span><span> GBP</span></div>
+        </div>
+      </div>
+
+      <div class="currency-expo-box">
+        <div class="currency-expo-box-half">
+          <div>1 USD</div>
+        </div>
+        <div class="equals">=</div>
+        <div class="currency-expo-box-half">
+          <div><span id="jpy"></span><span> JPY</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="convert-box">
+      <div class="select-currency-segment">
+        <select class="select-list" name="currency-from" id="currency-from"></select>
+        <select class="select-list" name="currency-to" id="currency-to"></select>
+      </div>
+      <div class="input-segment">
+        <input class="amount-input" type="text" id="entered-amount" placeholder="Enter amount"/>
+        <div class="equals2">=</div>
+        <input class="amount-input" type="text" id="converted-amount" placeholder=""/>
+        
+      </div>
+      <input id="convert-button" type="button" value="Convert"/>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
